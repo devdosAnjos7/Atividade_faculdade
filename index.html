@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento Web</title>
+</head>
+<body>
+    <header>
+        <h1>Analise e Desenvolvimento de Sistemas</h1>
+        <p>Conhecimentos fundamentais de HTML, CSS, JavaScript</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#js">JavaScript</a></li>
+            <li><a href="quemsomos.html">Quem Somos?</a></li>
+            <li><a href="#Cadastros">Cadastro</a></li>
+        </ul>
+    </nav>
+    <!--Seção do HTML-->
+    <section id ='html'>
+        <h2>HTML</h2>
+        <p>HTML (HyperText Markup Language) é uma linguagem de marcação usada para estruturar e organizar o conteúdo de páginas web. Diferente de linguagens de programação, o HTML não executa lógica ou cálculos, mas define a estrutura e o significado dos elementos em uma página.</p>
+        <img src="https://tse3.mm.bing.net/th/id/OIP.pqcPskVdTrJqfhZ-Z49AtQHaHn?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <ul>
+            <li>html</li>
+            <li>head</li>
+            <li>body</li>
+             <li>h1 até o h6</li>
+             <li>p</li>
+             <li>a</li>
+             <li>img</li>
+        </ul>
+        <p>Saiba mais em: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">MDN Web Docs</a></p>
+    </section>
+
+    <!-- Seção do CSS-->
+    <section id="css">
+        <h2>CSS</h2>
+        <p>CSS, ou Folhas de Estilo em Cascata, é uma linguagem que permite estilizar elementos em uma página web. Com CSS, você pode definir propriedades como cores, tamanhos, fontes, espaçamentos, posicionamentos e muito mais.</p>
+        <img src="img/css-logo.png" alt="">
+    </section>
+
+    <!-- Seção do JS-->
+     <section>
+        <h2>JavaScript</h2>
+        <p>JavaScript é uma linguagem de programação leve, interpretada e amplamente utilizada para criar interatividade em páginas web. Ele permite que desenvolvedores implementem funcionalidades dinâmicas, como atualizações automáticas de conteúdo, animações, controle de multimídia e muito mais. É uma das três tecnologias fundamentais da web, ao lado de HTML (estrutura) e CSS (estilo).</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/240px-JavaScript-logo.png" alt="">
+        <pre>
+            <code>
+            const para = document.querySelector("p");
+            para.addEventListener("click", atualizarNome);
+            function atualizarNome() {
+                const nome = prompt("Insira um novo nome:");
+                para.textContent = "Jogador 1: " + nome;
+            }
+            </code>
+        </pre>
+     </section>
+     <!-- Cadastros -->
+      <section id="Cadastros">
+        <h2>Cadastro </h2>
+        <fieldset>  
+            <legend>Dados Pessoais</legend> 
+            <!-- Nome -->
+            <label for="Nome">Nome Completo:</label>
+            <input type="text" id="Nome" name="Nome" placeholder="Digite seu nome completo">
+            <br><br>
+            <!-- Data de Nascimento -->
+             <label for="Data">Data de Nascimento:</label>
+            <input type="date" id="DatadeNascimento"  > 
+            <br><br>
+            <!-- Sexo -->
+            <label>Sexo:</label>
+            <input type="radio" id="masc" name="sexo" value="Masculino">
+            <label for="masc">Masculino</label>
+            <input type="radio" id="fem" name="sexo" value="Feminino">
+            <label for="fem">Feminino</label>
+            <br><br>
+            <!-- Etnia -->
+           <label>Etnia:</label>
+            <!-- Branco -->
+            <input type="radio" id="branco" name="etnia" value="Branco">
+            <label for="branco">Branco(a)</label>
+            <!-- Negro -->
+            <input type="radio" id="negro" name="etnia" value="Negro">
+            <label for="negro">Negro(a)</label>
+            <!-- pardo -->
+            <input type="radio" id="pardo" name="etnia" value="Pardo">
+            <label for="pardo">Pardo(a)</label>
+            <!-- Amarelo -->
+            <input type="radio" id="amarelo" name="etnia" value="Amarelo">
+            <label for="amarelo">Amarelo(a)</label>
+            <!-- Indigena -->
+            <input type="radio" id="indigena" name="etnia" value="Indigena">
+            <label for="indigena">Indigena</label>
+            <!-- Estado Civil -->
+            <br><br>
+            <label for="Estado Civil">Estado Civil:</label>
+            <!-- Solteiro -->
+            <input type="radio" id="Solteiro" name="Estado Civil" value="Solteiro">
+            <label for="Solteiro">Solteiro(a)</label>
+             <!-- Casado -->
+            <input type="radio" id="Casado" name="Estado Civil" value="Casado">
+            <label for="Casado">Casado(a)</label>
+             <!-- Divorciado -->
+            <input type="radio" id="Divorciado" name="Estado Civil" value="Divorciado">
+            <label for="Divorciado">Divorciado(a)</label>
+              <!-- Viúvo-->
+            <input type="radio" id="Viúvo" name="Estado Civil" value="Viúvo">
+            <label for="Viúvo">Viúvo(a)</label><br><br>
+            <!-- Escolariedade -->
+            <label for="Escolariedade">Escolariedade</label>
+            <select name="Escolariedade" id="escolariedade">
+                <option value="">Selecione</option>
+                  <!-- Fundamental Incompleto -->
+                <option value="Fundamental_incompleto">Ensino Fundamental Incompleto</option>
+                 <!-- Fundamental completo -->
+                <option value="Fundamental_completo">Ensino Fundamental Completo</option>
+                  <!-- Medio Incompleto -->
+                <option value="medio_incompleto">Ensino Médio Incompleto</option>
+                  <!-- Medio completo -->
+                <option value="medio_completo">Ensino Médio Completo</option>
+                  <!-- Superior Incompleto -->
+                <option value="Superior_incompleto">Ensino Superior Incompleto  </option>
+                 <!-- Superior completo -->
+                  <option value="Superior_completo">Ensino Superior Completo     </option>
+                   <!-- Pós graduação-->
+                    <option value="pos">Pós-Graduação</option> 
+            </select>
+            <br><br>
+            <!-- Email -->
+             <label for="Email">Email:</label>
+            <input type="email" name="Email" id="email"><br><br>
+
+            <!-- Foto -->
+             <label for="Arquivo">Foto:</label>
+             <input type="file" name="Arquivo" id="Image">
+            
+
+        </fieldset>
+ <br><br>
+        <fieldset>
+            <br>
+                <legend>Dados da Matricula</legend>
+                <!-- Curso  -->
+                <label for="Curso_desejado">Curso desejado:</label><br><br>
+            <fieldset style="padding:20px 20px; width:fit-content;">
+            <!-- Curso de HTML  -->
+            <input type="checkbox" name="curso_html" id="HTML"> HTML <br>
+            <!-- Curso de CSS  -->
+            <input type="checkbox" name="curso_html" id="HTML"> CSS <br>
+            <!-- Curso de JavaScript  -->
+            <input type="checkbox" name="curso_html" id="HTML"> JavaScript <br>
+            </fieldset>
+
+            <!-- Horário do Curos -->
+            <label for="hora_curso">Horário do Curso:
+            </label>
+            <!-- Horário Matutino  -->
+            <input type="checkbox" name="hora_matutino" id="curso_manha"> Matutino
+            <!-- Horário Vespertino  -->
+            <input type="checkbox" name="hora_vespertino" id="curso_vespertino"> Vespertino
+            <!-- Horário Noturno  -->
+            <input type="checkbox" name="hora_noturno" id="curso_noturno"> Noturno
+        </fieldset>
+     </section>
+  
+</body>
+</html>
